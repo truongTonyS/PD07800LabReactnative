@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const players = [
+    {name : "Messi", goals :30},
+    undefined,
+    {name : "Ronaldo", goals :28},
+    {name : "Neymar", goals :22},
+    {goals : 2},
+    {name : "Mbappe", goals :25},
+    {name : "Pele", goals :null},
+];
+const filteredPlayers = players.filter(
+    (player) => player && player.name && player.goals
+);
+console.log(filteredPlayers);
+
+const playerWithMaxGoals = players.reduce((maxPlayer, player) =>
+  player?.goals > maxPlayer?.goals ? player : maxPlayer
+);
+
+const playerNameWithMaxGoals = playerWithMaxGoals?.name;
+
+console.log(playerNameWithMaxGoals);
+    </script>
+    
+</body>
+</html>
