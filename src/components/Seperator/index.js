@@ -12,5 +12,5 @@ const Separator = ({text}) =>{
      
     )
 }
-export default React.meno(Separator);
+export default React.memo(Separator);
 

@@ -19,7 +19,6 @@ const SignUp = () =>{
     return(
         <View>
             <AuthHeader title ="Sign Up"></AuthHeader>
-            <Input labe1="Name" placeholder="Exampke Jonh" />
             <Input labe1="Email" placeholder="example@gmail.com" />
             <Input isPassword labe1="Password" placeholder="*******" />
             <View style={styles.checkRow}>
