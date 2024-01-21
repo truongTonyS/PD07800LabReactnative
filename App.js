@@ -1,9 +1,9 @@
 import React from 'react';
-import {Text} from 'react-native';
-import lab3 from './src/screens/lab3';
+
+import Splash from './src/screens/auth/SignUP'
 
  const App = () => {
-  return <lab3></lab3>
+  return <Splash></Splash>
 };
 
 export default App;
