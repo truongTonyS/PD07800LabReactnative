@@ -1,10 +1,8 @@
 import React from 'react';
-
-import Splash from './src/screens/auth/SignIn'
-import Lab4 from './src/screens/lab4';
+import Lab3 from './src/screens/Lab3/bai1';
 
  const App = () => {
-  return <Lab4></Lab4>
+  return <Lab3></Lab3>
 };
 
 export default App;

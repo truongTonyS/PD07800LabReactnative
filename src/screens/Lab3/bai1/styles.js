@@ -23,7 +23,7 @@ export const style = StyleSheet.create({
     },
     tipStyle:{
       borderWidth: 1,
-      borderColor: 'gray',
+      borderColor: '#000000',
       borderRadius: 10,
       marginHorizontal: 15,
       marginTop: 10,

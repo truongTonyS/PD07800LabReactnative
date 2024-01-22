@@ -2,19 +2,15 @@ import React, { useState } from 'react';
 import { View, Text, TextInput } from 'react-native';
 import { style } from './styles';
 
-const colorText = (color) => {
-  return {
-    color: color,
-  };
-};
-
 const ViewComponent = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
 
+
   return (
-    <View>
+    <View style={style.container}>
+      <View>
       <TextInput
         value={name}
         onChangeText={setName}
@@ -36,13 +32,7 @@ const ViewComponent = () => {
         style={style.tipStyle}
       />
     </View>
-  );
-};
 
-const Lab3 = () => {
-  return (
-    <View>
-    <View style={style.container}>
       {/* Line1 */}
       <View></View>
       <Text style={style.baseText}>
@@ -142,8 +132,14 @@ const Lab3 = () => {
         và con đường đó giờ <Text style={colorText('white')}>vắng anh</Text>
       </Text>
     </View>
-    </View>
+   
     );
 };
 
-export default Lab3;
+export default ViewComponent;
+
+const colorText = (color) => {
+  return {
+    color: color,
+  };
+};
