@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import ListCourse from '../../components/list';
+import ListCourse from '../../../components/list';
 
 
 const Lab4 = () => {
