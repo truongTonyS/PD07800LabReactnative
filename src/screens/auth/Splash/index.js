@@ -4,7 +4,7 @@ import { styles } from "./styles";
 import Button from "../../../components/Button/"
 
 
-const Splash = () => {
+const Splash = ({navigation}) => {
   return (
     <View>
       <Image
@@ -17,8 +17,10 @@ const Splash = () => {
         <Text style={[styles.title, styles.innerTitle]}>All you need</Text>
         <Text style={styles.title}>Here!</Text>
       </View>
-      <Button title="Sign Up" />
-      <Pressable>
+      <Button 
+      onPress={() => navigation.navigate('SignUp')}
+      title={"Sign Up"} />
+      <Pressable onPress={() => navigation.navigate('SignIn')}>
         <Text style={styles.footerText}>Sign In</Text>
       </Pressable>
     </View>

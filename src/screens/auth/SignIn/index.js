@@ -14,25 +14,29 @@ import GoogleLogin from '../../../components/GoogleLogin';
 const SignUp = () =>{
     const [checked, setChecked] = useState(false);
     const onSignIn = () => {
-        console.log('Test Sign in');
+        navigation.navigate(SignUp)
     };
+const onBack =() =>{
+    navigation.goBack();
+};    
     return(
         <View>
-            <AuthHeader title ="Sign Up"></AuthHeader>
+            <AuthHeader onBackPress={onBack} title ="Sign In"/>
             <Input labe1="Email" placeholder="example@gmail.com" />
             <Input isPassword labe1="Password" placeholder="*******" />
             <View style={styles.checkRow}>
                 <Checkbox checked={checked} onCheck={setChecked}></Checkbox>
                 <Text style={styles.checkText}>I agree with Terms & Privacy</Text>
             </View>
-            <Button style={styles.button} title="Sign Up"></Button>
+            <Button style={styles.button} title="Sign In"></Button>
             <Seperator text="Or sign up with"></Seperator>
             <GoogleLogin></GoogleLogin>
 
             <Text style={styles.fontText}>
-                Already have an account?
+                Don't have an account?
                 <Text onPress={onSignIn} style={styles.footerLink}>
-                    Sign In
+                    {' '}
+                    Sign Up
                 </Text>
             </Text>
         </View>
