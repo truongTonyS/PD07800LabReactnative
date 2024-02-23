@@ -1,19 +1,19 @@
+import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-
+import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import ListUser from "./listUser";
-import addUser from "./addUser";
-
+import AddUser from "./addUser";
 const Crud = () => {
     const Stack = createNativeStackNavigator();
 
- return(
-    <NavigationContainer>
-        <Stack.Navigator>
-            <Stack.Screen name="ListUser" component={ListUser}/>
-            <Stack.Screen name="addUser" component={addUser}/>
-        </Stack.Navigator>
-    </NavigationContainer>
- )
+    return(
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name="ListUser" component={ListUser}></Stack.Screen>
+                <Stack.Screen name="AddUser" component={AddUser}></Stack.Screen>
+            </Stack.Navigator>
+        </NavigationContainer>
+    )
 }
-export default  Crud;
+
+export default Crud;

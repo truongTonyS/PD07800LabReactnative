@@ -56,11 +56,19 @@ const App = () => {
 //   return ( 
 //     <NavigationContainer>
 //       <Stack.Navigator>
+//       {isSignedIn ? (
+//           <>
+//             <Stack.Screen
+//               name="Tabs" component={Tabs}options={{headerShown: false}}/>
+//           </>
+//         ) : (
+//           <> 
         
-        
-//         <Stack.Screen name="Splash" component={Splash} options={{headerShown:false}}/>
+//         {/* <Stack.Screen name="Splash" component={Splash} options={{headerShown:false}} />
 //         <Stack.Screen name="SignIn" component={SignIn} options={{headerShown:false}}/>
-//         <Stack.Screen name="SignUP" component={SignUP} options={{headerShown:false}}/>
+//         <Stack.Screen name="SignUP" component={SignUP} options={{headerShown:false}}/> */}
+//          </>
+//         )} 
 //       </Stack.Navigator>
 //     </NavigationContainer>
 
