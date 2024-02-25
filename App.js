@@ -1,13 +1,29 @@
+import React from 'react';  
+import Crud from "./src/screens/lab8/CRUD";
+const App = () => {
+  return(
+    <Crud></Crud>
+  )
+};
 
-// import Splash from './src/screens/auth/Splash';
-// import SignUP from './src/screens/auth/SignUP';
+
+
+
+// import React, {useEffect,useState} from 'react';
+// import Splash from './src/screens/auth/Splash'
 // import SignIn from './src/screens/auth/SignIn';
+// import SignUp from './src/screens/auth/SignUP';
 // import Home from './src/screens/app/home';
 // import Favorites from './src/screens/app/Favorites';
 // import Profile from './src/screens/app/Profile';
 // import { NavigationContainer } from '@react-navigation/native';
-// import {createNativeStackNavigator} from '@react-navigation/native-stack';
-// import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import { Image   } from 'react-native';
+
+
+
+
 // const Stack = createNativeStackNavigator();
 // const Tab = createBottomTabNavigator();
 // const Tabs = () => (
@@ -41,30 +57,56 @@
 //   </Tab.Navigator>
 // );
 
-
-
-//  const App = () => {
+// const App = () => {
+//   const WEB_CLIENT_ID =
+//     '356032109327-0eka9phlma63uoi7sgenobcgpum7i77n.apps.googleusercontent.com';
+//   const IOS_CLIENT_ID =
+//     '356032109327-91jiecs7rjmuuupojnjkqspfbcfpq9c9.apps.googleusercontent.com';
 //   const isSignedIn = true;
-//   return ( 
+//   useEffect(() => {
+//     GoogleSignin.configure({
+//       scopes: ['https://www.googleapis.com/auth/drive.readonly'], // what API you want to access on behalf of the user, default is email and profile
+//       webClientId: WEB_CLIENT_ID, // client ID of type WEB for your server (needed to verify user ID and offline access)
+//       offlineAccess: true, // if you want to access Google API on behalf of the user FROM YOUR SERVER
+//     });
+//   }, []);
+
+//   return (
 //     <NavigationContainer>
 //       <Stack.Navigator>
-//       {isSignedIn ? (
+//         {/* {isSignedIn ? (
 //           <>
 //             <Stack.Screen
-//               name="Tabs" component={Tabs}options={{headerShown: false}}/>
+//               name="Tabs"
+//               component={Tabs}
+//               options={{headerShown: false}}
+//             />
 //           </>
 //         ) : (
-//           <> 
-        
-//         {/* <Stack.Screen name="Splash" component={Splash} options={{headerShown:false}} />
-//         <Stack.Screen name="SignIn" component={SignIn} options={{headerShown:false}}/>
-//         <Stack.Screen name="SignUP" component={SignUP} options={{headerShown:false}}/> */}
-//          </>
-//         )} 
+//           <>
+//             <Stack.Screen
+//               name="Splash"
+//               component={Splash}
+//               options={{headerShown: false}}
+//             />
+//             <Stack.Screen
+//               name="SignIn"
+//               component={SignIn}
+//               options={{headerShown: false}}
+//             />
+//             <Stack.Screen
+//               name="SignUp"
+//               component={SignUp}
+//               options={{headerShown: false}}
+//             />
+//           </>
+//         )} */}
+//         <Stack.Screen name="Splash" component={Splash} />
+//         <Stack.Screen name="SignIn" component={SignIn} />
+//         <Stack.Screen name="SignUp" component={SignUp} />
+//         <Stack.Screen name='Tabs' component={Tabs} options={{ headerShown: false }} />
 //       </Stack.Navigator>
 //     </NavigationContainer>
-
 //   );
 // };
-
 export default App;

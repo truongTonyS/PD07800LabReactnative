@@ -23,8 +23,8 @@ const Input =({labe1, placeholder, isPassword})=>{
                         <Image style={styles.eye}
                         source={
                             isPasswordVisible
-                            ? require('../../assets/imga/eye.png')
-                            : require('../../assets/imga/clo_eye.png')
+                            ? require('../../assets/eye.png')
+                            : require('../../assets/eye_closed.png')
 
                         }></Image>
                     </Pressable>

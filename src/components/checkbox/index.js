@@ -12,7 +12,7 @@ const Checkbox = ({checked, onCheck}) =>{
                 <View style ={styles.innerContainer}>
                     <Image
                     style={styles.checkIcon}
-                    source={require('../../assets/imga/Check.png')}></Image>
+                    source={require('../../assets/Check.png')}></Image>
                 </View>
             ) : null}
         </TouchableOpacity>
