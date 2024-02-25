@@ -1,30 +1,29 @@
-import { Image, Pressable, Text, View } from "react-native";
-import React from "react";
-import { styles } from "./styles";
-import Button from "../../../components/Button/"
-
-
+import React from 'react';
+import { Text, Image, View, Pressable } from 'react-native';
+import { styles } from './styles';
+import Button from '../../../components/Button';
 const Splash = ({navigation}) => {
-  return (
-    <View>
-      <Image
-        resizeMode="contain"
-        style={styles.img}
-        source={require("../../../assets/imga/10050.png")}
-      />
-      <View>
-        <Text style={styles.title}>You'll Find</Text>
-        <Text style={[styles.title, styles.innerTitle]}>All you need</Text>
-        <Text style={styles.title}>Here!</Text>
+    return (
+      <View style={styles.container}>
+        <Image
+          resizeMode="contain"
+          style={styles.img}
+          source={require('../../../assets/splash.png')}
+        />
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>You'll Find</Text>
+          <Text style={[styles.title, styles.innerTitle]}>All you need</Text>
+          <Text style={styles.title}>Here!</Text>
+        </View>
+  
+        <Button
+          onPress={() => navigation.navigate('SignUp')}
+          title="Sign Up"></Button>
+        <Pressable onPress={() => navigation.navigate('SignIn')}>
+          <Text style={styles.footerText}>Sign in</Text>
+        </Pressable>
       </View>
-      <Button 
-      onPress={() => navigation.navigate('SignUp')}
-      title={"Sign Up"} />
-      <Pressable onPress={() => navigation.navigate('SignIn')}>
-        <Text style={styles.footerText}>Sign In</Text>
-      </Pressable>
-    </View>
-  );
-};
-
-export default Splash;
+    );
+  };
+  
+  export default Splash;

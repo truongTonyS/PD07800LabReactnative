@@ -1,12 +1,4 @@
-import React from 'react';
-import Crud from './src/screens/lab8/CRUD';
 
-
-const App = () => {
-  return(
-    <Crud></Crud>
-  );
-};
 // import Splash from './src/screens/auth/Splash';
 // import SignUP from './src/screens/auth/SignUP';
 // import SignIn from './src/screens/auth/SignIn';
